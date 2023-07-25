@@ -10,6 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     background-color: hsl(257, 40%, 49%);
     background-image: url(images/bg-mobile.svg);
     background-repeat: no-repeat;
@@ -27,11 +28,23 @@ body {
     width: 100%;
 }
 
-.container header img {
+header {
     position: relative;
-    width: 120px;
-    margin-bottom: 50px;
-    left: -100px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 90px;
+}
+
+header img {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 140px;
+    object-fit: cover;
+}
+
+.container .left, .right {
+        width: 100%;
 }
 
 .container .left img {
@@ -62,13 +75,87 @@ body {
     margin-top: 10px;
 }
 
-.container .footer {
+.container button:hover {
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+    color: #fff;
+}
+
+footer {
     margin-top: 50px;
 }
 
-.container .footer a {
+footer a {
     color: #fff;
     font-size: 17px;
     padding: 9px;
+}
+
+footer a:hover {
+    color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 900px) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    header {
+        margin-bottom: 100px;
+    }
+
+    header img {
+        top: 100px;
+        left: 20px;
+        width: 200px;
+    }
+
+    .container {
+        flex-direction: row;
+        text-align: left;
+        gap: 70px;
+        margin-top: 90px;
+    }
+
+    .container .left img {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .right {
+        margin-top: -70px;
+    }
+
+    .container .right h1 {
+        font-size: 37px;
+        padding: 10px 170px 10px 0px;
+    }
+
+    .container .right p {
+        font-size: 17px;
+        padding: 10px 166px 10px 0px;
+    }
+
+    .container button {
+        border-radius: 24px;
+        padding: 11px 49px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    footer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+    footer a {
+    font-size: 20px;
+    text-align: right;
+    }
 
 }
