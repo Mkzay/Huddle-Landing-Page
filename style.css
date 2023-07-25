@@ -33,7 +33,7 @@ header {
     width: 100%;
     height: 100%;
     margin-bottom: 90px;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 header img {
@@ -85,7 +85,7 @@ header img {
 
 footer {
     margin-top: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 footer a {
