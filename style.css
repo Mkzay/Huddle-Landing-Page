@@ -33,6 +33,7 @@ header {
     width: 100%;
     height: 100%;
     margin-bottom: 90px;
+    margin-top: 30px;
 }
 
 header img {
@@ -73,6 +74,7 @@ header img {
     color: hsl(257, 40%, 49%);
     font-family: 'Poppins', sans-serif;
     margin-top: 10px;
+    transition: .4s;
 }
 
 .container button:hover {
@@ -83,12 +85,14 @@ header img {
 
 footer {
     margin-top: 50px;
+    margin-bottom: 60px;
 }
 
 footer a {
     color: #fff;
     font-size: 17px;
     padding: 9px;
+    transition: .4s;
 }
 
 footer a:hover {
@@ -110,7 +114,7 @@ footer a:hover {
 
     header img {
         top: 100px;
-        left: 20px;
+        left: 100px;
         width: 200px;
     }
 
@@ -119,6 +123,7 @@ footer a:hover {
         text-align: left;
         gap: 70px;
         margin-top: 90px;
+        padding-left: 100px;
     }
 
     .container .left img {
@@ -155,7 +160,8 @@ footer a:hover {
 
     footer a {
     font-size: 20px;
-    text-align: right;
+    position: relative;
+    left: 80%;
     }
 
 }
